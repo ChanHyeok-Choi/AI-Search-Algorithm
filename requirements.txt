@@ -1,0 +1,18 @@
+### pip install torch==1.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116 ###
+### conda install nvidia/label/cuda-11.6.0::cuda-toolkit -c condaforge ###
+accelerate
+-i https://pypi.org/simple/ bitsandbytes
+# transformers[torch] -U --> 직접 실행해야 함
+
+datasets
+langchain
+langchain_community
+PyMuPDF
+sentence-transformers
+faiss-gpu
+
+##############################
+# .conda/envs/AISAl 확인해볼 것 #
+##############################
+
+## 주의사항 (중요!!!) 전부 설치 후에 캐시를 비워줘야 함 -> pip cache purge; conda clean -all -y
